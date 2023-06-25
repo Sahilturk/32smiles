@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32smiles/Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var parent = document.querySelector('.splitview'),
+            topPanel = parent.querySelector('.top'),
+            handle = parent.querySelector('.handle'),
+            skewHack = 0,
+            delta = 0;
+    
+        // If the parent has .skewed class, set the skewHack var.
+        if (parent.className.indexOf('skewed') != -1) {
+            skewHack = 1000;
+        }
+    
+        parent.addEventListener('mousemove', function(event) {
+            // Get the delta between the mouse position and center point.
+            delta = (event.clientX - window.innerWidth / 2) * 0.5;
+    
+            // Move the handle.
+            handle.style.left = event.clientX + delta + 'px';
+    
+            // Adjust the top panel width.
+            topPanel.style.width = event.clientX + skewHack + delta + 'px';
+        });
+    });
+</script>
+    
+</head>
+<body>
+
+    <!-- ----header start---- -->
+
+    <div class="topheader">
+        <img src="images/top.PNG" alt="">
+    </div>
+    <div class="mainheader">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./images/logo1.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="">Education <i class="fas fa-angle-down"></i></a>
+                                <ul>
+                                    <li><a href="./professional.html">Professional</a></li>
+                                    <li><a href="./patient.html">Patient</a></li>
+                                </ul>        
+                            
+                            </li>
+                            <li><a href="./research.html">Research</a></li>
+                                <li><a href="./product.html">Product <i class="fas fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="./brushes.html">Brushes</a></li>
+                                        <li><a href="./toothpastes.html">Tooth Pastes</a></li>
+                                        <li><a href="./accessories.html">Accessories</a></li>
+                                        <li><a href="./kidsproducts.html">Kids Product</a></li>
+                                    </ul>
+                                </li>
+                            <li><a href="./contactus.html">Contact us</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- ----header end---- -->
+
+    <!-- ---slider Start---- -->
+        <div class="splitview skewed">
+            <div class="panel bottom">
+                <div class="content">
+                    <img src="images/slider1.jpg" style="width: 100%;" alt="Original">
+                </div>
+            </div>
+
+            <div class="panel top">
+                <div class="content">
+                    <img src="images/slider2.jpg" style="width: 100%;" alt="Duotone">
+                </div>
+            </div>
+
+            <div class="handle"></div>
+        </div>
+        <!-- ---slider end---- -->
+
+        
+    
+         <!-- ----banner start---- -->
+
+         <section class="section services-section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h2><a href="./patient.html">Knowledge for Patient</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="feature-content">
+                                <h4>Gum Disease</h4>
+                                <p>This is a bacterial infection brought about by accumulations of plaque in the mouth. The bacteria eats away at the gum tissue and the ligaments that hold the teeth in place. There are five established stages of gum disease, which means that there is usually plenty of time and opportunities for patients to reverse its progress.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="feature-content">
+                                <h4>Tooth Infection</h4>
+                                <p>This happens when the root (the bottom part) of a tooth becomes infected and fills up with bacteria. It damages the nerves and the pulp tissue inside the tooth itself, if left untreated, so get to the dentist right away if you think that you might have this condition. A deep crack, fracture, or cavity can lead to an infection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                           <div class="feature-content">
+                                <h4>Dry Mouth</h4>
+                                <p>This condition is sometimes called xerostomia, but it is most easily recognised with the simple term dry mouth. Unsurprisingly, it is caused by a lack of saliva in the mouth. This can occur for a number of different reasons, but it is a well-known side effect of taking prescription medications. If you are on any kind of drugs, ask your doctor whether this could be an issue.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="feature-content">
+                                <h4>Tooth Decay</h4>
+                                <p>Tooth decay is also referred to as dental caries or cavities. It occurs when the bacteria in plaque is given the chance to settle on teeth. It produces an acid that slowly eats away at the tooth enamel and forms holes. This bacteria is particularly prevalent after eating sugars and starches, so limit exposure by eating a healthy diet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                           <div class="feature-content">
+                                <h4>Enamel Degradation</h4>
+                                <p>This is a very common problem and it is characterised by very round and noticeably discoloured enamel surfaces. It occurs as a result of exposure to corrosive materials like fizzy drinks and sugary snacks. The acid in these ingredients wears down the enamel and gives it a stained and unhealthy look. In some cases, overzealous brushing may also be a factor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- feaure box -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box-1">
+                            <div class="feature-content">
+                                <h4>Oral Cancers</h4>
+                                <p>This condition is sometimes called xerostomia, but it is most easily recognised with the simple term dry mouth. Unsurprisingly, it is caused by a lack of saliva in the mouth. This can occur for a number of different reasons, but it is a well-known side effect of taking prescription medications. If you are on any kind of drugs, ask your doctor whether this could be an issue.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                </div>
+            </div>
+        </section>
+    
+    <!-- ----banner end---- -->
+
+    <!-- ----dentisit start---- -->
+    <div class="dentist">
+        <div class="container">
+            <div class="section-title">
+                <h2><a href="./contactus.html">Meet Certified & Experienced Dentist</a></h2>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/dr.aimen.jpg" alt="Dr-Aiman" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Dr. Aimen Zia</h1> 
+                    <p><i class="fas fa-map-marker-alt"> </i> Zia Dental Care, Karachi</p> 
+                    <p><i class="fas fa-phone"> </i> +92 300 2278864</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/dr.majid.jpg" alt="Dr-Majid" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Dr. H. M. Majid Jehangir</h1> 
+                    <p><i class="fas fa-map-marker-alt"> </i> 6-B, Faisal Town, Near Excise & Taxation Office, Lahore</p> 
+                    <p><i class="fas fa-phone"> </i>+92 333 4523110</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/dr.umar.jpg" alt="Dr-Umar" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Dr. Umer Bin Irfan</h1> 
+                    <p><i class="fas fa-map-marker-alt"> </i> Dental Solutions Clifton, Karachi</p>
+                    <p><i class="fas fa-phone"> </i> +92 333 3137190</p> 
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/dr.umer.jpg" alt="Dr-Umer" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Dr. Umar Farooq</h1> 
+                    <p><i class="fas fa-map-marker-alt"> </i> Dental Centre, Islamabad</p> 
+                    <p><i class="fas fa-phone"> </i> +92 311 1222398</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- ----dentisit end---- -->
+
+     <!-- ----product area start---- -->
+
+    <div id="cards_landscape_wrap-2">
+        <div class="container">
+            <div class="row">
+                <h1 class="heading"> <a href="./product.html">Products</a></h1>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="./brushes.html">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="./images/toothbrush.jfif" alt="" />
+                                </div>
+                                <div class="text-container">
+                                    <h6>Brushes</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="./toothpastes.html">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="./images/toothpaste.jpg" alt="" />
+                                </div>
+                                <div class="text-container">                                    
+                                    <h6>Toothpastes</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="./accessories.html">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="./images/accessories.jfif" alt="" />
+                                </div>
+
+                                <div class="text-container">
+                                    <h6>Accessories</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="./kidsproducts.html">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="./images/kidsproduct.jfif" alt="" />
+                                </div>
+                                <div class="text-container">
+                                    <h6>Kids Products</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----product area end---- -->
+
+
+    <!-- ----News area start---- -->
+
+    <section class="wrapper">
+        <div class="container-fostrap">
+            
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="heading"><a href="./research.html"> Latest News</a></h1>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="./research.html">
+                                <img src="./images/news1.jpg">
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="./research.html"> The best, worst and unproven tools to care for your teeth
+                                      </a>
+                                    </h4>
+                                    <p>
+                                        Do probiotics prevent gum disease? Is flossing necessary? Many patients are unable to confidently answer these questions...
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="./research.html" class="btn btn-link btn-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="./research.html">
+                                <img src="./images/news2.jpg" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="./research.html"> New technique helps researchers understand how acid damages teeth
+                                      </a>
+                                    </h4>
+                                    <p>
+                                        The University of Surrey and the School of Dentistry at the University of Birmingham have developed....
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="./research.html" class="btn btn-link btn-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="./research.html">
+                                <img src="./images/news3.jpg" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="./research.html">Baby teeth may one day help identify kids at risk for mental disorders later in life
+                                      </a>
+                                    </h4>
+                                    <p>
+                                        The team analysed 70 primary teeth collected from 70 children...
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="./research.html" class="btn btn-link btn-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ----News area end---- -->
+
+     <!-- ----Map start---- -->
+
+    <div class="map">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d275290.6228636826!2d67.03048424199046!3d24.964574030068473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1640353670859!5m2!1sen!2s" width="1580" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    
+    <!-- ----Map start---- -->
+
+    <!-- ----form start---- -->
+    <div class="form">
+        <div class="container">
+            <div class="title"><h1>Contact Us</h1></div>
+            <form action="3">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your Email" required>
+                    </div><div class="input-box">
+                        <span class="number">Phone Number</span>
+                        <input type="text" placeholder="Enter your Phone Number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date</span>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="message">Message</span>
+                    <input type="text" placeholder="Enter Message" required>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>    
+    <!-- ----form end---- -->
+
+    <!-- ----footer start---- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <a href="./index.html"> <img class="logo" src="./images/logo1.png" alt=""><p>32<span>smiles<span></p></a>
+                </div> 
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./professional.html">Professional Education</a></li>
+                        <li><a href="./patient.html">Patient Education</a></li>
+                        <li><a href="./research.html">Research</a></li>
+                        <li><a href="./product.html">Products</a></li>
+                        <li><a href="./contactus.html">Contact us</a></li>
+                    </ul>
+                </div> 
+                
+                
+                <div class="footer-col">
+                    <h4>Contact Details</h4>
+                    <ul>
+                        <li><a href="">32smiles@email.com</a></li>
+                        <li><a href="">www.32smiles.com</a></li>
+                        <li><a href="">Lorem ipsum dolor sit, amet </a></li>
+                        <li><a href="">12345678901</a></li>
+                    </ul>
+                </div> 
+                
+                
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul class="social-link">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </footer>
+<!-- ----footer end---- -->
+
+</body>
+</html>
